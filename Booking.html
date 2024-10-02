@@ -1,0 +1,289 @@
+<?php
+ ?>
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+ <title>Hitesh</title>
+      <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow sticky-top" width"40">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+      <img src="Img/1726996257417.jpg"alt="logo" width="50">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+
+        <li class="nav-item">
+          <a class="nav-link" href="Bookings.Html">Bookings</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            View
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <li><a class="dropdown-item" href="Photos.html">Photos</a></li>
+            <li><a class="dropdown-item" href="#">Vidos</a></li>
+           
+          </ul>
+        </li> 
+      </ul>
+    </div>
+  </div>
+</nav> <br><br>
+ 
+
+
+
+
+
+
+<head>
+<title> Student Registration Form </title>
+
+
+<script type="text/javascript">
+	
+	function validate(){
+
+		if(document.myForm.First_Name.value==""){
+
+			alert("Please provide First Name !");
+			document.myForm.First_Name.focus();
+			return false;
+		}
+
+		if(document.myForm.Last_Name.value==""){
+
+			alert("Please provide Last Name !");
+			document.myForm.Last_Name.focus();
+			return false;
+		}
+
+		if(document.myForm.Mobile.value==""){
+
+			alert("Please provide mobile number !!");
+			document.myForm.Mobile.focus();
+			return false;
+		}
+
+		if(document.myForm.Email.value==""){
+
+			alert("Please provide valid Email !!");
+			document.myForm.Email.focus();
+			return false;
+		}
+
+		if(document.myForm.Password.value==""){
+
+			alert("Please Enter BOOKING DATE !!");
+			document.myForm.Password.focus();
+			return false;
+		}
+		if(document.myForm.village.value==""){
+
+			alert("Please provide village");
+			document.myForm.village.focus();
+			return false;
+		}
+     if(document.myForm.Post.value==""){
+
+			alert("Please provide Post");
+			document.myForm.Post.focus();
+			return false;
+		}
+		 if(document.myForm.Thana.value==""){
+
+			alert("Please provide Thana");
+			document.myForm.Thana.focus();
+			return false;
+		}
+		if(document.myForm.city.value==""){
+
+			alert("Please provide city");
+			document.myForm.city.focus();
+			return false;
+		}
+
+		if(document.myForm.state.value==""){
+
+			alert("Please Enter State !!");
+			document.myForm.state.focus();
+			return false;
+		}
+
+		return(true);
+
+			}
+
+
+</script>
+
+
+
+</head>
+
+<body>
+
+
+
+	<form action = "Payment.html"method="POST"name = "myForm" onSubmit = "return (validate())" ;>
+
+<h3 align = "center"> BOOKING FORM </h3>
+
+<table align = "center" cellpadding="9">
+
+<tr>
+<td> First Name : </td>
+<td>
+<input type = "text" name = "First_Name" placeholder="First Name" />
+</td>
+</tr>
+
+<tr>
+<td> Last Name : </td>
+<td>
+	<input type = "text" name ="Last_Name" placeholder="Last Name" />
+</td>
+
+</tr>
+
+<tr>
+	<td> Gender : </td>
+	<td> Male
+		<input type="radio" name="Gender" value="male" /> 
+	Female
+ 
+ <input type="radio" name="Gender" value="female" />
+	</td>
+</tr>
+
+
+<tr>
+	<td> Moblie No. </td>
+<td>
+      <input type="number" name="Mobile" placeholder="Moblie Number" />
+</td>
+</tr>
+
+<tr>
+	<td> Email : </td>
+	<td> <input type="email" name="Email" placeholder="Email Id" />
+	</td>
+</tr>
+
+
+<tr>
+	<td> BOOKING DATE : </td>
+	<td><input type="date" name="Password" placeholder="Password" />
+	</td>
+</tr>
+
+
+<tr>
+	<td> Address : </td>
+
+<td>
+	<text name = "Address" rows="5" cols="20" placeholder="Address" />
+		
+	</textarea>
+</td>
+
+</tr>
+<tr>
+	<td> Village :</td>
+
+<td>
+	<input type="text" name="village" placeholder="village" />
+</td>
+
+</tr>
+<td> Post :</td>
+
+<td>
+	<input type="text" name="Post" placeholder="post" />
+</td>
+
+</tr>
+<tr>
+	<td> Thana :</td>
+
+<td>
+	<input type="text" name="Thana" placeholder="Thana" />
+</td>
+
+</tr>
+<tr>
+	
+
+<tr>
+	<td> City :</td>
+
+<td>
+	<input type="text" name="city" placeholder="City" />
+</td>
+
+</tr>
+
+
+<tr>
+	<td> State : </td>
+<td>
+	<input type="text" name="state" placeholder="State" />
+</td>
+
+</tr>
+
+
+<tr>
+	<td> Country : </td>
+	<td>
+		<input type="text" name="Country" value="INDIA" readonly="readonly" />
+	</td>
+</tr>
+
+
+
+
+<tr>
+	<td align="right"> </td>
+	<td>
+<input type="Submit"  Value = "Payment"  />
+</td>
+</tr>
+
+
+</table>
+
+</form>
+
+
+</body>
+
+</html>
+<?php
+  $host"localhost";
+  $usr"root";
+  $pass"";
+  $db"Damo";
+   $conn=mysqli_connect($host,$usr,'',$db);
+ 
+ 
+ 
+ ?>
+
+
+
+</body>
+      </html>
